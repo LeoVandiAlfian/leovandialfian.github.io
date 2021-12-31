@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Vandi Alfian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- portfolio -->
+<body>
+
+    <section id="hero" class="hero">
+        <nav>
+            <div class="logo"><a href="#">Leo Vandi Alfian</a></div>
+            <div class="navigasi">
+                <a href="#home">home</a>
+                <a href="#skill">skill</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="span">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Welcome To My Portfolio,</h1>
+            <h1>My Name Is Leo</h1>
+            <h1>A People Front End Developer</h1>
+        </div>
+    </section>
+
+    <section id="home" class="home">
+        <div class="header"><h1>Home</h1></div>
+        <div class="content"><h2>Who Is Me?</h2>
+            <div class="grid">
+                <div class="gridsatu"><h2>I Am Front End Developer</h2></div>
+                <div class="griddua">I looking For A Front End Developer Jobs, Fixed Or Not Fixed Is Not A Problem.</div>
+
+                <div class="gridtiga">Is I Am Able To Learn Skill That I Am For The Moment Cant Do?<br>The Answer I Able, I Will Learn The Skill If Needed.</div>
+                <div class="gridempat">I Wanna Do A Front End Job, That Need Or Doesnt Need A Teamwork, I Will Try To Suitable</div>
+                <div class="gridlima">I Am Have To Playing Game, Thats Why I Am Able To Use Computer</div>
+                <div class="gridenam">I Try To Do The Best</div>
+                </div>
+        </div>
+    </section>
+
+    <section id="skill" class="skill">
+        <div class="header"><h1>Skill</h1></div>
+        <div class="content">
+            <h2>What Skill I Have For Now?</h2>
+            <div class="grid">
+                <div class="gridsatu"><h2>For Now, My Skill Is Not Expert. But Of Course Will Be Upgraded More During Time.</h2></div>
+                <div class="griddua">I Can Operate Simple Microsoft Excel Job, Like Input, Or Do A Simple Formula</div>
+                <div class="gridtiga">I Can Operate Basic Microsoft Word, I Can Made A Basic Proposal Using Microsoft Word.</div>
+                <div class="gridempat">Of Course I Am Able To Using HTML, CSS, And Javascript. I Am A Front Developer.</div>
+                <div class="gridlima">I Can Do A Marketing Product, If U Need A Product To Do A Marketing, I Can.</div>
+                <div class="gridenam">I Am Able To Using English, But Not Really Fluent, Just Can Understand What People Say A Bit.</div>
+                <div class="gridtujuh">I Can Playing Guitar, Games, Yoyo, Rubik's Cube, For Fill A Blank Time.</div>
+                <div class="griddelapan">A Job That Need To Skill, I Wanna Upgraded My Skill, Of Course I Like To Study.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="header"><h1>Contact</h1></div>
+        <div class="content">
+            <h2>I Am Using Gmail To Contact</h2>
+            <div class="conten"><h1>Gmail : leovandialfian99@gmail.com</h1>
+            <h2>For A Job, Fixed Or Not Fixed, U Can Send The Front End Job Description What U Need To My Gmail, Thank You. </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="footer">
+        <div class="content">Web Designed By @Leo Vandi Alfian.</div>
+    </section>
+    
+<script>
+    const span = document.querySelector('.span');
+    const navigasi = document.querySelector('.navigasi')
+    span.addEventListener('click', function() {
+        span.classList.toggle('active');
+        navigasi.classList.toggle('active');
+    })
+    document.querySelectorAll('.navigasi a').forEach(n => n.addEventListener('click', () => {
+        span.classList.remove('active');
+        navigasi.classList.remove('active');
+    }))
+</script>
+</body>
+</html>
