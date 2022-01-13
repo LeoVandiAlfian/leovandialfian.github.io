@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,500;1,700&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 1s;
+}
+html{
+    font-size: 65%;
+    height:2000rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    background:rgb(236, 236, 241);
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(78, 88, 182);
+    border-radius: 5%;
+}
+
+/* hero mulai */
+.hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height:100vh;
+    background:rgb(1, 1, 27);
+}
+.hero nav{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5rem;
+    padding:2rem;
+    background:blue;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .logo{
+    font-size: 2rem;
+    color:white;
+}
+.hero .navigasi{
+    width:40%;
+    display:flex;
+    justify-content: space-between;
+    margin:1rem;
+}
+.hero .navigasi a{
+    font-size: 1.5rem;
+    color:white;
+}
+.hero .content{
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .conten{
+    margin:auto;
+    font-size: 2rem;
+    color:rgb(236, 165, 165);
+}
+/* hero selesai */
+
+/* home mulai */
+.home .content{
+    width:100%;
+    height:100vh;
+    background:rgb(236, 236, 245);
+    display:flex;
+    justify-content: center;
+    background:blue;
+}
+.home .conten{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    text-align: center;
+    width:80%;
+    background:blue;
+    grid-template-columns: repeat(2,25%);
+    grid-template-rows: repeat(4,25%);
+    grid-template-areas:
+    'conten1 conten1'
+    'conten2 conten2'
+    'conten3 conten3'
+    'conten4 conten4';
+    padding:2rem;
+}
+.home .conten1{
+    grid-area: conten1;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 3rem;
+    background:yellow;
+}
+.home .conten2{
+    grid-area: conten2;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 2rem;
+    background:pink;
+    border-radius: 7%;
+}
+.home .conten3{
+    grid-area: conten3;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 2rem;
+    background:skyblue;
+    border-radius: 7%;
+}
+.home .conten4{
+    grid-area: conten4;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 2rem;
+    background:aqua;
+    border-radius: 7%;
+}
+/* home selesai */
+
+/* skill mulai */
+.skill{
+    background:rgb(107, 107, 209);
+    width:100%;
+    min-height:100vh;
+    display:flex;
+
+}
+.skill .content{
+    display:flex;
+    border:3px solid yellow;
+    width:100%;
+    min-height:100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.skill .content1 .conten1, .skill .content1 .conten2, .skill .content1 .conten3, .skill .content1 .conten4, .skill .content1 .conten5{
+    display:none;
+}
+.skill .content1{
+    border:10px solid white;
+    border-radius: 15px;
+    height:35%;
+    width:25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+    font-size: 1.5rem;
+}
+.skill .content1.active{
+    position:absolute;
+    top:2rem;
+    animation: transisi 2s forwards;
+}
+/* .skill .content1.actives{
+    border:2px solid blue;
+    width:30%;
+    height:80%;
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'conten1 conten2'
+    'conten3 conten4'
+    'conten5 conten5';
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding:0;
+    border:15px solid white;
+    border-radius: 15%;
+    overflow:hidden;
+    margin-right:800px;
+    transition-delay: 2s;
+}
+.skill .content1.actives .header{
+    grid-area: header;
+    background:blue;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 2s;
+}
+.skill .content1.actives .conten1{
+    grid-area: conten1;
+    background:pink;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 2s;
+}
+.skill .content1.actives .conten2{
+    grid-area: conten2;
+    background:rgb(115, 197, 230);
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 2s;
+}
+.skill .content1.actives .conten3{
+    grid-area: conten3;
+    background:yellow;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 2s;
+}
+.skill .content1.actives .conten4{
+    grid-area: conten4;
+    background:green;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 2s;
+}
+.skill .content1.actives .conten5{
+    grid-area: conten5;
+    background:rgb(141, 233, 210);
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 2s;
+} */
+
+.skill .button{
+    width:60px;
+    height:60px;
+    padding:1rem;
+    background:rgb(236, 238, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.skill .content2 .conten1, .skill .content2 .conten2, .skill .content2 .conten3, .skill .content2 .conten4{
+    display:none;
+}
+.skill .content2{
+    border:10px solid white;
+    border-radius: 15px;
+    height:35%;
+    width:25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+    font-size: 1.5rem;
+}
+.skill .content2.actives{
+    border:2px solid blue;
+    width:30%;
+    height:80%;
+    display:grid;
+    text-align: center;
+    border:15px solid white;
+    border-radius: 15%;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'conten1 conten2'
+    'conten3 conten3'
+    'conten4 conten4';
+    font-size: 2rem;
+}
+.skill .content2.actives .header{
+    grid-area: header;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background:rgb(230, 177, 177);
+}
+.skill .content2.actives .conten1{
+    grid-area: conten1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background:rgb(233, 196, 196);
+}
+.skill .content2.actives .conten2{
+    grid-area: conten2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background:rgb(233, 194, 194);
+}
+.skill .content2.actives .conten3{
+    grid-area: conten3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background:rgb(226, 192, 192);
+}
+.skill .content2.actives .conten4{
+    grid-area: conten4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background:rgb(230, 200, 200);
+}
+
+/* skill selesai */
+
+
+
+/* animation mulai */
+@keyframes transisi{
+    50%{
+        margin-left:-800px;
+    }
+    100%{
+        margin-top:100px;
+    }
+}
+@keyframes transisii{
+    33%{
+        margin-left:50px;
+    }
+    33%{
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+    33%{
+        margin-right:;
+    }
+}
+/* animation selesai */
